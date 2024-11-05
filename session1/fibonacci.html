@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let n1 = +prompt("Enter The First Number: ");
+      let n2 = +prompt("Enter The Second Number: ");
+      let n3 = 0;
+      let fb = +prompt("Enter Your Fibonacci Special Number: ");
+      while (true) {
+        n3 = n1 + n2;
+        n1 = n2;
+        n2 = n3;
+        if(n3 == fb) {
+          alert("Your Number is in the loop");
+          break;
+        } else if(n3 > fb) {
+          alert("Your Number is not in the loop");
+          break;
+        }
+      }
+    </script>
+  </body>
+</html>

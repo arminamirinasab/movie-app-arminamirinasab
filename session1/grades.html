@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const data = [
+        { id: 1, name: "Alice", score: 3 },
+        { id: 2, name: "Bob", score: 7.87 },
+        { id: 3, name: "Charlie", score: 9.001 },
+        { id: 4, name: "David", score: 11 },
+        { id: 5, name: "Eve", score: 13 },
+        { id: 6, name: "Frank", score: 8 },
+        { id: 7, name: "Grace", score: 9 },
+        { id: 8, name: "Hannah", score: 9.2 },
+        { id: 9, name: "Isaac", score: 8.86 },
+      ];
+
+      for (let i = 0; i < data.length; i++) {
+        data[i].score = Math.floor(data[i].score) + 1;
+        if (data[i].score > 9) {
+          data[i].status = "Passed";
+          console.log(data[i].name + " Accepted \n Score: " + data[i].score);
+        } else {
+          data[i].status = "Failed";
+        }
+      }
+      
+      console.log(data);
+
+    </script>
+  </body>
+</html>
